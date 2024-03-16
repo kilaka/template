@@ -1,6 +1,7 @@
-package elzin.template.springboot.api;
+package elzin.template.springboot.being.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import elzin.template.springboot.being.model.Being;
 import lombok.SneakyThrows;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,8 +13,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/sanctuary")
-public class Sanctuary {
+@RequestMapping("/sanctuary-in-mem")
+public class SanctuaryInMem {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
